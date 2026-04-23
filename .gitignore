@@ -1,0 +1,10 @@
+.env
+plots/
+__pycache__/
+*.pyc
+dashboard.html
+insights.txt
+frontend/node_modules/
+frontend/dist/
+frontend/*.tsbuildinfo
+recalibrate.py

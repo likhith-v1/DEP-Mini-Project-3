@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,600;0,9..144,900;1,9..144,400&family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg:          #faf8f4;
+  --surface:     #ffffff;
+  --surface2:    #f4f0e8;
+  --border:      #e2dbd0;
+  --border-soft: rgba(0,0,0,0.06);
+  --accent:      #c0392b;
+  --accent-dim:  rgba(192,57,43,0.12);
+  --accent2:     #1d4ed8;
+  --accent2-dim: rgba(29,78,216,0.10);
+  --text:        #1c1917;
+  --text-muted:  #6b5e54;
+  --text-dim:    #a8998e;
+  --rule:        #d4ccc0;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: 'Libre Baskerville', Georgia, serif;
+  -webkit-font-smoothing: antialiased;
+  background-image:
+    radial-gradient(circle at 20% 0%, rgba(192,57,43,0.03) 0%, transparent 60%),
+    radial-gradient(circle at 80% 100%, rgba(29,78,216,0.03) 0%, transparent 60%);
+  background-attachment: fixed;
+}
+
+/* Recharts overrides */
+.recharts-cartesian-axis-tick text {
+  font-family: 'Space Mono', monospace !important;
+  font-size: 9px !important;
+  fill: var(--text-dim) !important;
+}
+
+.recharts-tooltip-wrapper .recharts-default-tooltip {
+  background: var(--surface) !important;
+  border: 1px solid var(--border) !important;
+  border-radius: 2px !important;
+  font-family: 'Space Mono', monospace !important;
+  font-size: 11px !important;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.10) !important;
+}
+
+.recharts-legend-item-text {
+  font-family: 'Space Mono', monospace !important;
+  font-size: 9px !important;
+  color: var(--text-muted) !important;
+}
+
+/* Count-up animation */
+@keyframes count-reveal {
+  from { opacity: 0; transform: translateY(6px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.count-anim { animation: count-reveal 0.5s ease-out forwards; }
+
+/* Staggered fade-in for sections */
+@keyframes fade-up {
+  from { opacity: 0; transform: translateY(14px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.fade-up { animation: fade-up 0.5s ease-out both; }
+
+/* Section rule line */
+.section-rule {
+  flex: 1;
+  height: 1px;
+  background: var(--rule);
+}
+
+/* ── Dark mode ────────────────────────────────────────────────────── */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg:          #100f0d;
+    --surface:     #1c1a17;
+    --surface2:    #252219;
+    --border:      #3d3830;
+    --border-soft: rgba(255,255,255,0.06);
+    --accent:      #e05545;
+    --accent-dim:  rgba(224,85,69,0.15);
+    --accent2:     #6b9cf0;
+    --accent2-dim: rgba(107,156,240,0.12);
+    --text:        #f0ebe2;
+    --text-muted:  #b5a898;
+    --text-dim:    #6b5e52;
+    --rule:        #3d3830;
+  }
+
+  body {
+    background-image:
+      radial-gradient(circle at 20% 0%, rgba(224,85,69,0.06) 0%, transparent 55%),
+      radial-gradient(circle at 80% 100%, rgba(107,156,240,0.05) 0%, transparent 55%);
+  }
+
+  .recharts-tooltip-wrapper .recharts-default-tooltip {
+    box-shadow: 0 4px 16px rgba(0,0,0,0.45) !important;
+  }
+}
+
+/* Grain texture overlay */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 9999;
+  opacity: 0.025;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+  background-size: 200px 200px;
+}

@@ -1,0 +1,42 @@
+{
+  "tech": [
+    "best python libraries 2024", "how to use docker compose", "what is large language model", "git rebase vs merge", "kubernetes tutorial beginners",
+    "rest api vs graphql", "linux terminal commands", "machine learning pipeline", "cloud computing benefits", "best code editor 2024",
+    "system design interview tips", "open source contribution guide", "web scraping with python", "API rate limiting strategies", "microservices architecture patterns",
+    "TypeScript vs JavaScript", "database indexing explained", "CI CD pipeline tutorial", "regex cheat sheet", "async programming patterns",
+    "neural network from scratch", "data structures algorithms", "docker kubernetes difference", "serverless architecture explained", "SQL vs NoSQL database",
+    "git branching strategy", "software testing best practices", "code review tips", "technical debt management", "open source license types"
+  ],
+  "news": [
+    "latest ai developments", "climate change 2024 report", "global economy outlook", "space exploration news", "electric vehicle adoption",
+    "cybersecurity threats 2024", "renewable energy progress", "artificial intelligence regulation", "quantum computing news", "social media trends",
+    "global supply chain disruption", "nuclear energy revival", "ocean pollution crisis", "human rights 2024", "geopolitics tensions",
+    "economic inequality statistics", "biodiversity loss report", "food security global", "pandemic preparedness policy", "digital privacy laws",
+    "semiconductor chip shortage", "central bank interest rates", "migration refugee crisis", "press freedom 2024", "UN climate summit outcomes",
+    "water scarcity global", "tech monopoly antitrust", "rising cost of living", "deep sea mining controversy", "vaccine equity developing countries"
+  ],
+  "health": [
+    "symptoms of diabetes type 2", "how to improve sleep quality", "mediterranean diet benefits", "mental health resources", "covid variants 2024",
+    "exercise for beginners", "high blood pressure causes", "vitamin d deficiency signs", "stress management techniques", "cancer prevention tips",
+    "intermittent fasting benefits", "gut microbiome health", "chronic pain management", "cognitive behavioral therapy explained", "plant based diet science",
+    "alcohol effects on brain", "obesity prevention strategies", "aging longevity research", "ADHD treatment adults", "anxiety disorder symptoms",
+    "depression treatment options", "autoimmune disease symptoms", "sleep apnea treatment", "migraine triggers causes", "cholesterol diet management",
+    "type 1 diabetes research", "occupational therapy benefits", "posture spine health", "hydration health effects", "air quality health impact"
+  ],
+  "howto": [
+    "how to make sourdough bread", "how to learn guitar online", "how to invest in stocks", "how to meditate for beginners", "how to fix slow wifi",
+    "how to write a resume", "how to start a garden", "how to save money fast", "how to improve focus", "how to make cold brew coffee",
+    "how to start a podcast", "how to learn mathematics fast", "how to build a website", "how to negotiate salary", "how to do home workout",
+    "how to learn a new language", "how to build credit score", "how to meal prep weekly", "how to start journaling", "how to manage time effectively",
+    "how to reduce anxiety naturally", "how to write a cover letter", "how to start investing ETF", "how to improve public speaking", "how to declutter home",
+    "how to learn data science", "how to make passive income", "how to improve memory retention", "how to read faster", "how to build daily habits"
+  ],
+  "science": [
+    "black hole event horizon physics", "crispr gene editing therapy", "dark matter universe evidence", "quantum entanglement explained", "mRNA vaccine technology mechanism",
+    "ocean acidification coral reefs", "artificial photosynthesis solar fuel", "neural plasticity brain learning", "exoplanet habitability detection", "nuclear fusion energy breakthrough",
+    "antibiotic resistance bacteria evolution", "stem cell therapy advances", "climate model tipping points", "particle accelerator discoveries", "deep ocean ecosystem biology",
+    "gravitational waves detection", "epigenetics gene expression", "microplastics human health", "permafrost thawing methane", "consciousness neuroscience research",
+    "quantum computing qubits explained", "protein folding alphafold", "biodiversity sixth extinction", "asteroid impact probability", "solar flare space weather",
+    "gut bacteria mental health", "CRISPR ethics implications", "James Webb telescope findings", "tectonic plate movement causes", "bioluminescence deep sea"
+  ]
+}
