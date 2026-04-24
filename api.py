@@ -1,4 +1,4 @@
-"""FastAPI server: reads Mini-Project-3 MongoDB, serves JSON to React frontend."""
+"""FastAPI server: reads Reddit Multi-Community Trend Analysis MongoDB, serves JSON to React frontend."""
 
 import os
 from urllib.parse import urlparse
@@ -11,9 +11,9 @@ from fastapi.middleware.cors import CORSMiddleware
 from db import get_client, get_db, load_df
 
 load_dotenv()
-DB_NAME = os.getenv("MONGO_DB", "dep_mp3")
+DB_NAME = os.getenv("MONGO_DB", "reddit_trend_analysis")
 
-app = FastAPI(title="Reddit Community Trend Analysis API")
+app = FastAPI(title="Reddit Multi-Community Trend Analysis API")
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["http://localhost:5173", "http://localhost:4173"],

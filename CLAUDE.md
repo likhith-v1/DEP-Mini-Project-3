@@ -1,9 +1,4 @@
-# Mini-Project-3 — Agent Instructions
-
-## Identity
-- Student: Likhith V | USN: 23BTRCL257 | Section: AIML-D | JAIN University
-- Course: Data Engineering & Processing (DEP)
-- Project root: /Users/likhithv/Documents/DEP/Mini-Project/Mini-Project-3/
+# Reddit Multi-Community Trend Analysis — Agent Instructions
 
 ## Project: Reddit Multi-Community Trend Analysis
 Compare top-50 Reddit posts from 14 subreddits for 150 curated queries (5 categories × 30: tech/news/health/howto/science).
@@ -12,7 +7,7 @@ Train 6 ML models (5 regressors + MeanBaseline) to predict inter-subreddit Jacca
 No API keys required — Reddit JSON API is public for unauthenticated reads (1.5s sleep between requests).
 
 ## File Structure
-Mini-Project-3/
+reddit-multi-community-trend-analysis/
 ├── CLAUDE.md                   <- canonical (this file)
 ├── AGENTS.md -> CLAUDE.md      <- symlink
 ├── copilot-instructions.md -> CLAUDE.md  <- symlink
@@ -31,7 +26,7 @@ Mini-Project-3/
 ## Running
 ```
 docker compose up -d mongo
-source ../../dep/bin/activate
+source .venv/bin/activate
 uv pip install -r requirements.txt
 cp .env.example .env
 python analysis.py --force-refresh
@@ -40,8 +35,8 @@ python recalibrate.py          # run after analysis.py to apply affinity priors
 ```
 
 ## Environment
-- Python 3.12 | Venv: ../../dep/ | uv pip install only (never pip/pip3)
-- MongoDB 7.0 via Docker Compose | DB: dep_mp3
+- Python 3.12 | Venv: .venv/ | uv pip install only (never pip/pip3)
+- MongoDB 7.0 via Docker Compose | DB: reddit_trend_analysis
 - Collections: queries, raw_results, overlap_metrics, predictions, model_eval, fetch_failures, overlap_summary
 
 ## Conventions

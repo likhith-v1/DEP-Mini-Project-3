@@ -11,7 +11,7 @@ export function DashboardFooter() {
         <div className="flex items-center gap-3">
           <div style={{ width: 16, height: 1, background: "var(--accent)" }} />
           <p className="font-mono text-[9px]" style={{ color: "var(--text-dim)" }}>
-            DEP Mini-Project III · JAIN University · 2026
+            Research Dashboard · 2026
           </p>
         </div>
       </div>

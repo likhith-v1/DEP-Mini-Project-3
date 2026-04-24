@@ -1,4 +1,4 @@
-"""MongoDB helpers for Mini-Project-3."""
+"""MongoDB helpers for Reddit Multi-Community Trend Analysis."""
 
 import os
 import time
@@ -30,7 +30,7 @@ def get_client() -> MongoClient:
 def get_db(client: MongoClient):
     """Return the configured Mongo database."""
     load_dotenv()
-    return client[os.getenv("MONGO_DB", "dep_mp3")]
+    return client[os.getenv("MONGO_DB", "reddit_trend_analysis")]
 
 
 def ensure_indexes(db) -> None:

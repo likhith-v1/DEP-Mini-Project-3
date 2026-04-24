@@ -1,4 +1,5 @@
 {
+  "name": "reddit-multi-community-trend-analysis",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",

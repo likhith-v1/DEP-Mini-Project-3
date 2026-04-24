@@ -1,11 +1,6 @@
 # Reddit Multi-Community Trend Analysis
 
-Mini-Project-3 for Data Engineering & Processing (DEP). This project compares Reddit search results across 14 subreddits for 150 curated queries, measures cross-community overlap, and trains regression models to predict inter-subreddit agreement from query features.
-
-Student: Likhith V  
-USN: 23BTRCL257  
-Section: AIML-D  
-Course: Data Engineering & Processing, JAIN University
+Compares Reddit search results across 14 subreddits for 150 curated queries, measures cross-community overlap, and trains regression models to predict inter-subreddit agreement from query features.
 
 ## Overview
 
@@ -94,10 +89,10 @@ Start MongoDB:
 docker compose up -d mongo
 ```
 
-Activate the DEP virtual environment and install Python dependencies:
+Activate the virtual environment and install Python dependencies:
 
 ```bash
-source ../../dep/bin/activate
+source .venv/bin/activate
 uv pip install -r requirements.txt
 ```
 
@@ -111,7 +106,7 @@ Default environment values:
 
 ```text
 MONGO_URI=mongodb://localhost:27017
-MONGO_DB=dep_mp3
+MONGO_DB=reddit_trend_analysis
 TOP_K=50
 ```
 
@@ -200,3 +195,7 @@ The frontend uses an Editorial Light visual style with warm parchment background
 - Static charts are generated with Plotly only.
 - `AGENTS.md` and `copilot-instructions.md` are symlinks to `CLAUDE.md`.
 - Do not commit generated outputs unless the assignment explicitly requires them.
+
+## License
+
+MIT License. See [LICENSE](LICENSE) for full text.

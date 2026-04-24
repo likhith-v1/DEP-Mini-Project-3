@@ -1,6 +1,5 @@
 """
-Mini Project 3: Reddit Multi-Community Trend Analysis
-Author: Likhith V | 23BTRCL257 | AIML-D
+Reddit Multi-Community Trend Analysis
 """
 
 import glob
@@ -39,7 +38,7 @@ from db import count, ensure_indexes, get_client, get_db, load_df, upsert_many
 load_dotenv()
 
 TOP_K = int(os.getenv("TOP_K", 50))
-DB_NAME = os.getenv("MONGO_DB", "dep_mp3")
+DB_NAME = os.getenv("MONGO_DB", "reddit_trend_analysis")
 PLOTS_DIR = "plots"
 os.makedirs(PLOTS_DIR, exist_ok=True)
 
@@ -76,7 +75,7 @@ RETRIES = 0
 # DATA COLLECTION
 
 _REDDIT_BASE = "https://www.reddit.com"
-_REDDIT_HEADERS = {"User-Agent": "DEP-miniproject/1.0 (academic; Likhith V)"}
+_REDDIT_HEADERS = {"User-Agent": "reddit-multi-community-trend-analysis/1.0 (academic)"}
 
 def load_queries(path: str) -> list[dict]:
     with open(path, "r", encoding="utf-8") as f:

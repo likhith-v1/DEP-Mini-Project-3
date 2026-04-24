@@ -26,15 +26,9 @@ export function ProjectHero({ summary }: Props) {
                 className="font-mono text-[10px] uppercase tracking-[0.35em]"
                 style={{ color: "var(--accent)" }}
               >
-                Data Engineering &amp; Processing
+                Reddit Multi-Community Analysis
               </span>
               <div style={{ flex: 1, height: 1, background: "var(--rule)", maxWidth: 80 }} />
-              <span
-                className="font-mono text-[10px] tracking-wider"
-                style={{ color: "var(--text-dim)" }}
-              >
-                Mini-Project III
-              </span>
             </div>
 
             {/* Big title */}
@@ -69,13 +63,6 @@ export function ProjectHero({ summary }: Props) {
               agreement with six regression models.
             </p>
 
-            {/* Author line */}
-            <p
-              className="mt-4 font-mono text-xs"
-              style={{ color: "var(--text-dim)", letterSpacing: "0.05em" }}
-            >
-              Likhith V &nbsp;·&nbsp; 23BTRCL257 &nbsp;·&nbsp; AIML-D &nbsp;·&nbsp; JAIN University
-            </p>
           </div>
 
           {/* ── Right: run card ── */}

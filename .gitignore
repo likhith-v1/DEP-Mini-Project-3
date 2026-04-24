@@ -1,4 +1,5 @@
 .env
+.venv/
 plots/
 __pycache__/
 *.pyc
